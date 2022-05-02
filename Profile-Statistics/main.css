@@ -3,3 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+}
+
+.stats-container {
+  margin: 20px;
+  border: dotted green;
+  min-width: 200px;
+  height: 100px;
+  padding: 20px;
+  position: relative;
+}
+
+.stats-container h4 {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.fas, .fab {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fab {
+  top: -38px;
+}
+
+.fas {
+   top: -30px;
+}
+
+.fa-apple {
+  font-size: 3.6em !important;
+}
+
+.counter {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: green;
+}
+
+@media (max-width: 500px){
+  body {
+    flex-direction: column;
+  }
+}
