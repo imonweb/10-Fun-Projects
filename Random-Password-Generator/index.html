@@ -5,15 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Random Password Generator</title>
 </head>
 <body>
   <div class="password-container">
     <h2>Random Password Generator</h2>
     <div class="input-container">
-      <input type="text" id="input" class="input">
+      <input type="text" id="input" class="input" placeholder="Create Password" readonly>
+      <i class="far fa-copy fa-2x"></i>
     </div>
+    <button class="btn">Generate</button>
   </div>
+
+  <div class="alert-container">Password Copied</div>
+
   <script src="app.js"></script>
 </body>
 </html>
+
