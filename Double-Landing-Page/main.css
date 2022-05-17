@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: impact, sans-serif;
+  /* flex-direction: column; */
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: lightblue;
+}
+
