@@ -1,7 +1,7 @@
 * {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 body {
@@ -9,25 +9,82 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
   text-align: center;
   font-family: impact, sans-serif;
   /* flex-direction: column; */
 }
 
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  backdrop-filter: brightness(.5);
+  -webkit-backdrop-filter: brightness(.5);
+  letter-spacing: 4px;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  cursor: pointer;
+  transition: .5s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
 .split {
   width: 50%;
   height: 100%;
+  top: 0;
+  overflow: hidden;
 }
 
 .split.left {
   position: absolute;
   left: 0;
   background-color: pink;
+  background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1644969385433");
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* object-fit: contain; */
+
 }
 
 .split.right {
   position: absolute;
   right: 0;
   background-color: lightblue;
+  background-image: url("https://images.samsung.com/is/image/samsung/p6pim/uk/2202/gallery/uk-galaxy-s22-s901-sm-s901bzadeub-530845950?$1300_1038_PNG$");
+  background-size: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 }
 
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
+}
+
+.left, .right {
+  transition: width 1s ease-in-out;
+}
